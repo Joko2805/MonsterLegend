@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Calculator</title>
+    <link rel="shortcut icon" href="image/icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="datos">
+            <div class="title">
+                <h2>Personalizado</h2>
+            </div>
+            <form id="formulario-1" class="formulario" action="#" method="post">
+                <div class="form-field">
+                    <label for="hora">N&uacute;mero de horas actual en cruce:</label>
+                    <input type="number" name="hora" id="hora" placeholder="0" min="0" max="100">
+                </div>
+                <div class="form-field">
+                    <label for="minuto">N&uacute;mero de minutos actual en cruce:</label>
+                    <input type="number" name="minuto" id="minuto" placeholder="0" min="0" max="60">
+                </div>
+                <div class="form-field">
+                    <label for="porcentaje">Porcentaje Descuento:</label>
+                    <select name="porcentaje" id="porcentaje">
+                        <option value="6">40%</option>
+                        <option value="4">60%</option>
+                        <option value="2">80%</option>
+                    </select>
+                </div>
+                <div class="boton-submit">
+                    <button type="submit">Calcular</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <div class="rept">
+                <h3>Tiempo real:</h3>
+                <p id="rept">H - M</p>
+            </div>
+        </div>
+        <div class="fondo"></div>
+    </div>
+    <div class="contenedor">
+        <div class="datos">
+            <div class="title">
+                <h2>Por horas</h2>
+            </div>
+            <form id="formulario-2" action="#" class="formulario" method="post">
+                <div class="form-field">
+                    <label for="hora2">N&uacute;mero de horas:</label>
+                    <input type="number" name="hora2" id="hora2" placeholder="0" min="0" max="100">
+                </div>
+                <div class="form-field">
+                    <label for="minuto2">N&uacute;mero de minutos:</label>
+                    <input type="number" name="minuto2" id="minuto2" placeholder="0" min="0" max="100">
+                </div>
+                <div class="boton-submit">
+                    <button type="submit">Calcular</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <div class="rept-2">
+                <h3>Tiempos:</h3>
+                <p id="primer" class="respuestas">H - M</p>
+                <p id="segundo" class="respuestas">H - M</p>
+                <p id="tercer" class="respuestas">H - M</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

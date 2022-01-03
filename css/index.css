@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../image/fondo.jpg);
+    background-size: cover;
+}
+
+.contenedor{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background:white;
+    box-shadow: 0 0 2px black;
+}
+
+.contenedor .datos{
+    width: 100%;
+}
+
+.contenedor .datos .title{
+    margin-bottom: 15px;
+}
+
+.contenedor .datos .title h2{
+    text-align: center;
+}
+
+.contenedor .datos .formulario .form-field{
+    margin-bottom: 20px;
+}
+
+.contenedor .datos .formulario .form-field label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+
+.contenedor .datos .formulario .form-field input, .contenedor .datos .formulario .form-field select{
+    width: 40%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;    
+    text-align: center;
+}
+
+.contenedor .datos .formulario .form-field input:active,
+.contenedor .datos .formulario .form-field input:hover,
+.contenedor .datos .formulario .form-field input:focus,
+.contenedor .datos .formulario .form-field select:active,
+.contenedor .datos .formulario .form-field select:hover,
+.contenedor .datos .formulario .form-field select:focus{
+    box-shadow: 0 0 3px blue;
+}
+
+.contenedor .datos .formulario .boton-submit{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor .datos .formulario .boton-submit button{
+    width: 45%;
+    padding: 5px 0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+}
+.contenedor .datos .formulario .boton-submit button:active,
+.contenedor .datos .formulario .boton-submit button:focus,
+.contenedor .datos .formulario .boton-submit button:hover{
+    box-shadow: 0 0 3px blue;
+}
+
+.contenedor .datos .rept h3,.contenedor .datos .rept p,
+.contenedor .datos .rept-2 h3, .contenedor .datos .rept-2 p{
+    text-align: center;
+}
+
+.contenedor .datos .rept h3{
+    margin-bottom: 10px;
+}
+
+.contenedor .datos .rept #rept{
+    font-size: .8em;
+}
+
+.contenedor .datos .rept-2 h3{
+    margin-bottom: 20px;
+}
+
+.contenedor .datos .rept-2 .respuestas{
+    margin-bottom: 7px;
+    font-size: .8em;
+}
+
+.contenedor .datos .rept, .contenedor .datos .rept-2{
+    padding: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    transition: .5s ease;
+}
+
+.contenedor .datos .rept:hover,
+.contenedor .datos .rept-2:hover{
+    transform: scale(1.05);
+    background: rgba(0,0,255,.2)
+}
